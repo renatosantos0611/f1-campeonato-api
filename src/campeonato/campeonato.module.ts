@@ -12,6 +12,7 @@ import { CampeonatoF1Provider } from './providers/campeonatof1-providers';
     providers: [
         CampeonatoF1Provider,
         CampeonatoService
-    ]
+    ],
+    exports: [CampeonatoService]
 })
 export class CampeonatoModule {}

@@ -34,5 +34,12 @@ export class CampeonatoF1Entity {
         default: () => 'CURRENT_TIMESTAMP',
     })
     data_atualizacao: string;
+
+    @Column({
+        type: 'tinyint',
+        default: 1,
+    })
+    ativo: boolean;
+
 }
 

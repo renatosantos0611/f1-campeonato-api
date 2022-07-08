@@ -6,6 +6,7 @@ import { AppService } from './app.service';
 import { databaseProviders } from './database/database.providers';
 import { CampeonatoModule } from './campeonato/campeonato.module';
 import { DatabaseModule } from './database/database.module';
+import { AuthModule } from './auth/auth.module';
 
 @Module({
   imports: [
@@ -14,7 +15,8 @@ import { DatabaseModule } from './database/database.module';
       envFilePath: '.env',
     }),
     // TypeOrmModule.forRootAsync(databaseProviders),
-    CampeonatoModule
+    CampeonatoModule,
+    AuthModule
   ],
   controllers: [AppController],
   providers: [AppService],
